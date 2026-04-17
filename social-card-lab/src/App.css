@@ -1,0 +1,146 @@
+/* App.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.header h1 {
+  font-size: 3rem;
+  color: #111827;
+  margin: 0 0 10px 0;
+  letter-spacing: -1px;
+}
+
+.header p {
+  color: #6b7280;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  width: 100%;
+}
+
+.card {
+  background: white;
+  border: 3px solid #111827;
+  border-radius: 20px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 6px 6px 0px #111827;
+}
+
+.card:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 10px 10px 0px #111827;
+}
+
+.card-header {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 3px solid #111827;
+  background-color: #f3f4f6;
+  object-fit: cover;
+  box-shadow: 3px 3px 0px #111827;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .avatar {
+  transform: scale(1.05);
+}
+
+.status-badge {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  background-color: #ccc;
+  box-shadow: 2px 2px 0px #111827;
+}
+
+.online .status-badge { background-color: #10b981; }
+.offline .status-badge { background-color: #ef4444; }
+
+.online { border-color: #111827; }
+.offline { border-color: #111827; opacity: 0.8; }
+
+.card-body h3 {
+  font-size: 1.5rem;
+  color: #111827;
+  margin: 0 0 12px 0;
+}
+
+.role-chip {
+  color: #374151;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0 0 15px 0;
+  background-color: #f3f4f6;
+  padding: 6px 16px;
+  border-radius: 24px;
+  border: 2px solid #e5e7eb;
+  display: inline-block;
+}
+
+.verified-icon {
+  color: #3b82f6;
+  margin-left: 8px;
+  font-size: 1.1rem;
+}
+
+.status-text {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #6b7280;
+  margin: 0 0 12px 0;
+}
+
+.bio-text {
+  font-size: 0.9rem;
+  color: #4b5563;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+  font-style: italic;
+}
+
+.connect-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 2px solid #111827;
+  background-color: #111827;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.connect-btn:hover {
+  background-color: white;
+  color: #111827;
+}

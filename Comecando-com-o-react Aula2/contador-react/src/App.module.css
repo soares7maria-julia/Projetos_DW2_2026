@@ -1,0 +1,19 @@
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.valor {
+  font-size: 48px;
+  margin: 20px 0;
+}
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}

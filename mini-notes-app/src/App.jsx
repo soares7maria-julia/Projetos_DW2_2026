@@ -120,8 +120,7 @@ export default function App() {
                 {notas.length === 1 ? "" : "s"}
               </span>
             </div>
-
-// ### Desafio 1: botão "Apagar tudo".
+{/* ### Desafio 1: botão "Apagar tudo" */}
               {notas.length > 0 && ( 
                 <button className="clear-btn" 
                 type="button" 
@@ -129,7 +128,7 @@ export default function App() {
                 >Apagar todas as notas</button>
                      
               )}
-// #################################
+{/* ###### */}
           </div>
 
           <div className="search-row">

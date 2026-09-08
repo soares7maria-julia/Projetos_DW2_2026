@@ -1,0 +1,60 @@
+:root {
+  color: #1f2937;
+  background: #f4f7fb;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+a { color: #1d4ed8; }
+a:focus-visible, select:focus-visible { outline: 3px solid #f59e0b; outline-offset: 3px; }
+
+.cabecalho {
+  align-items: center;
+  background: #102a43;
+  color: white;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+  padding: 1rem max(1.25rem, calc((100vw - 960px) / 2));
+}
+.cabecalho a { color: #d9e2ec; text-decoration: none; }
+.cabecalho .marca { color: white; font-size: 1.2rem; font-weight: 800; }
+.cabecalho nav { display: flex; gap: .9rem; }
+.cabecalho .ativo { border-bottom: 2px solid #fbbf24; color: white; }
+.contador { margin: 0; white-space: nowrap; }
+main { margin: 0 auto; max-width: 960px; padding: 3rem 1.25rem; }
+h1 { font-size: clamp(2rem, 5vw, 3rem); margin: 0 0 .25rem; }
+h2 { margin-top: 2rem; }
+.sobretitulo { color: #486581; font-size: .9rem; font-weight: 700; letter-spacing: .08em; margin: 0; text-transform: uppercase; }
+.introducao { font-size: 1.1rem; margin-bottom: 2rem; }
+.resumo { display: grid; gap: 1rem; grid-template-columns: repeat(3, 1fr); margin: 2rem 0; }
+.cartao-resumo, .lista-reservas li, .lista-salas li { background: white; border: 1px solid #d9e2ec; border-radius: .75rem; padding: 1.25rem; }
+.cartao-resumo p, .cartao-resumo small { color: #486581; display: block; margin: 0; }
+.cartao-resumo strong { display: block; font-size: 2.4rem; margin: .25rem 0; }
+.atalhos { display: flex; gap: 1rem; }
+.filtro { display: grid; gap: .35rem; margin: 1.5rem 0; max-width: 240px; }
+select { background: white; border: 1px solid #9fb3c8; border-radius: .4rem; color: #243b53; font: inherit; padding: .5rem; }
+.lista-reservas, .lista-salas { display: grid; gap: .75rem; list-style: none; padding: 0; }
+.lista-reservas li { align-items: center; display: flex; gap: 1rem; justify-content: space-between; }
+.lista-reservas p, .lista-salas p { color: #486581; margin: .25rem 0 0; }
+.lista-reservas a, .lista-salas h2 { font-weight: 700; margin: 0; }
+.acoes-reserva { align-items: center; display: flex; gap: .75rem; }
+.status { border-radius: 999px; display: inline-block; font-size: .85rem; font-weight: 700; padding: .2rem .65rem; white-space: nowrap; }
+.status--confirmada { background: #dbeafe; color: #1e40af; }
+.status--em-andamento { background: #fef3c7; color: #92400e; }
+.status--concluída { background: #d1fae5; color: #065f46; }
+.status--cancelada { background: #fee2e2; color: #991b1b; }
+.detalhes { display: grid; gap: 1rem; grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 2rem 0; }
+.detalhes div { background: white; border-radius: .5rem; padding: 1rem; }
+dt { color: #486581; font-size: .9rem; }
+dd { font-size: 1.1rem; margin: .25rem 0 0; }
+.vazio { background: #fff7ed; border-left: 4px solid #f97316; padding: 1rem; }
+.sr-only { height: 1px; margin: -1px; overflow: hidden; position: absolute; width: 1px; clip: rect(0, 0, 0, 0); }
+
+@media (max-width: 650px) {
+  .cabecalho, .lista-reservas li { align-items: flex-start; flex-direction: column; }
+  .resumo, .detalhes { grid-template-columns: 1fr; }
+  .cabecalho { gap: .75rem; }
+}

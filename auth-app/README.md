@@ -8,7 +8,7 @@ Pré-requisito: Node.js 18 ou superior.
 
 ```bash
 npm install
-cp .env.example .env   # preencha com os dados do seu projeto Supabase (seção 2)
+cp .env.local .env   # preencha com os dados do seu projeto Supabase (seção 2)
 npm run dev            # abre em http://localhost:5173
 ```
 
